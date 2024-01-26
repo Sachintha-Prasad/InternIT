@@ -1,6 +1,6 @@
 # InternIT 
 
-![logo]((https://github.com/Sachintha-Prasad/InternIT/blob/main/logo%20banner.svg))
+![logo]((https://github.com/Sachintha-Prasad/InternIT/blob/main/logo%20banner.png))
 
 ## Table of Contents
 
