@@ -6,10 +6,7 @@
 2. [Tech Stack](#2-tech-stack)
 3. [Features](#3-features)
 4. [Getting Started](#4-getting-started)
-5. [Project Structure](#5-project-structure)
-6. [API Documentation](#6-api-documentation)
-7. [Contributing](#7-contributing)
-8. [License](#8-license)
+
 
 ## 1. Overview
 
