@@ -1,4 +1,4 @@
-# InternIT Documentation
+# InternIT 
 
 ## Table of Contents
 
