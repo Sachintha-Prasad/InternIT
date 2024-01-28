@@ -1,19 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from "react"
-import NavBar from "./components/NavBar/NavBar"
-import Search from "./components/SearchDiv/Search"
-import Job from "./components/JobDiv/Job"
-import Value from "./components/ValueDiv/Value"
-import Footer from "./components/FooterDiv/Footer"
+import HeroSection from "./screens/HeroSection"
+import AboutSection from "./screens/AboutSection"
+import OurPartners from "./screens/OurPartners"
 
 const App = () => {
     return (
         <div>
-            <NavBar />
-            <Search />
-            <Job />
-            <Value />
-            <Footer />
+            <HeroSection />
+            <AboutSection />
+            <OurPartners />
         </div>
     )
 }

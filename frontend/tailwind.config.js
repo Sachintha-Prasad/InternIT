@@ -6,8 +6,15 @@ export default {
             colors: {
                 "dark-blue": "#0077B6",
                 "light-blue": "#C2F0FF",
-                black: "#343A40",
-                white: "#FEFCFB"
+                "dark-gray": "#343A40",
+                "light-gray": "#888888",
+                white: "#FFFFFF",
+                cream: "#FFFDEF"
+            },
+
+            screens: {
+                mobile: "425px",
+                tablet: "836px"
             }
         }
     },

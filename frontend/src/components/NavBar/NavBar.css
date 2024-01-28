@@ -1,0 +1,30 @@
+.menu-item {
+    position: relative;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0%;
+    background-color: #0077b6;
+    transition: all 300ms linear;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.menu-item:hover {
+    color: #343a40;
+}
+
+.active {
+    color: #343a40;
+}
+
+.active.menu-item::after {
+    width: 100%;
+}

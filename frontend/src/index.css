@@ -6,14 +6,41 @@
 
 :root {
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #fefcfb;
+}
+::-webkit-scrollbar-thumb {
+    background: #c2f0ff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0077b6;
 }
 
 body {
     background-color: #fefcfb;
+    color: #343a40;
 }
 
 li,
 a {
     text-decoration: none;
     list-style: none;
+}
+
+@layer components {
+    .common-container {
+        @apply max-w-[1600px] mx-auto  py-10 px-16;
+    }
+
+    .cta-btn {
+        @apply bg-dark-blue px-8 py-3 text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-dark-gray;
+    }
 }
