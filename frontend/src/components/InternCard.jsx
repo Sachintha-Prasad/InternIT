@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const InternCard = ({ intern }) => {
     return (
-        <div className="px-4 py-6 bg-white shadow-lg w-full max-w-[600px] rounded-lg">
+        <div className="p-6 bg-white shadow-lg w-full max-w-[600px] rounded-lg">
             <div className="flex flex-col items-center gap-2">
                 <div className="w-full max-w-[50px] h-[50px] flex items-center justify-center border-[1px] border-slate-300 p-1 rounded-full overflow-hidden">
                     <img
@@ -39,7 +39,7 @@ const InternCard = ({ intern }) => {
                         {intern.startDate}
                     </p>
                 </div>
-                <Link to={`/internships/${intern.id}`} className="cta-btn">
+                <Link to={`/internships/${intern.id}`} className="cta-btn mt-4">
                     Apply
                 </Link>
             </div>
