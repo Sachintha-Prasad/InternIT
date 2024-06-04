@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import InternCard from "./InternCard"
 
-const IntenList = () => {
+const IntenList = ({ isHome }) => {
     const [internList, setInternList] = useState([])
 
     useEffect(() => {
@@ -18,17 +18,19 @@ const IntenList = () => {
         }
     }, [])
 
+    const newInternList = isHome ? internList.slice(0, 3) : internList
+
     return (
         <div className="bg-blue-50">
             <div className="container py-12 flex flex-col gap-6">
                 <div className="flex justify-center">
                     <h2 className="text-2xl lg:text-3xl text-dark-gray font-semibold">
-                        Recent{" "}
+                        {isHome ? "Featured " : "Available "}
                         <span className="text-dark-blue">Internships</span>
                     </h2>
                 </div>
                 <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                    {internList.map((intern) => (
+                    {newInternList.map((intern) => (
                         <InternCard key={intern.id} intern={intern} />
                     ))}
                 </div>
