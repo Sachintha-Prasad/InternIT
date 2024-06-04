@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { Link, useLoaderData, useParams } from "react-router-dom"
+import { Link, Navigate, useNavigate, useParams } from "react-router-dom"
+import { toast } from "react-toastify"
 
 const InternPage = () => {
     const [intern, setIntern] = useState({})
     const { id } = useParams()
+    const navigate = useNavigate()
 
     useEffect(() => {
         try {
@@ -20,6 +22,26 @@ const InternPage = () => {
             console.log("Error in fetching data", error)
         }
     }, [])
+
+    // delete a internship
+    const deleteIntern = async () => {
+        const res = await fetch(`http://localhost:5000/internships/${id}`, {
+            method: "DELETE"
+        })
+        return
+    }
+
+    const onlickDeleteIntern = (jobId) => {
+        const confirm = window.confirm(
+            "Are you sure to delete this intenship? 😥"
+        )
+
+        if (!confirm) return
+
+        deleteIntern(jobId)
+        toast.success("Successfully deleted the internship!")
+        navigate("/internships")
+    }
 
     return (
         <div className="container py-24">
@@ -58,8 +80,19 @@ const InternPage = () => {
                         {intern.startDate}
                     </p>
                 </div>
-                <div className="btn-container">
-                    <Link></Link>
+                <div className="btn-container flex gap-3">
+                    <Link
+                        onClick={() => onlickDeleteIntern(intern.id)}
+                        className="cta-btn bg-red-600"
+                    >
+                        Delete
+                    </Link>
+                    <Link
+                        to={`/internships/${id}/edit-intern`}
+                        className="cta-btn bg-green-600"
+                    >
+                        Edit
+                    </Link>
                 </div>
             </div>
         </div>
