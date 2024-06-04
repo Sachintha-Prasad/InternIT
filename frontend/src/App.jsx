@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage"
 import InternPage from "./pages/InternPage"
 import InternsPage from "./pages/InternsPage"
 import PostInternPage from "./pages/PostInternPage"
+import UpdateInternPage from "./pages/UpdateInternPage"
 
 const App = () => {
     const router = createBrowserRouter(
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/internships" element={<InternsPage />} />
                 <Route path="/add-internship" element={<PostInternPage />} />
                 <Route path="/internships/:id" element={<InternPage />} />
+                <Route path="/edit-intern/:id" element={<UpdateInternPage />} />
             </Route>
         )
     )

@@ -88,7 +88,7 @@ const InternPage = () => {
                         Delete
                     </Link>
                     <Link
-                        to={`/internships/${id}/edit-intern`}
+                        to={`/edit-intern/${intern.id}`}
                         className="cta-btn bg-green-600"
                     >
                         Edit
