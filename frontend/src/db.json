@@ -1,59 +1,81 @@
 {
-    "internships": [
-        {
-            "id": "1",
-            "title": "Software Development Intern",
-            "company": "Tech Innovators Inc.",
-            "location": "San Francisco, CA",
-            "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
-            "requirements": "Knowledge of JavaScript, React.js, and Node.js. Strong problem-solving skills.",
-            "duration": "6 months",
-            "startDate": "2024-07-01",
-            "image": "https://media.istockphoto.com/id/1164494180/vector/flask-sign-lab-logo-template-vector-design-negative-space-bio-technology-symbol.jpg?s=612x612&w=0&k=20&c=NsnJH9TO3lGorXfBLo2NpqcdVZOgttXXvV3t6pCV2Js="
-        },
-        {
-            "id": "2",
-            "title": "Marketing Intern",
-            "company": "Creative Minds LLC",
-            "location": "New York, NY",
-            "description": "Support the marketing team in executing campaigns. Conduct market research and analyze data to identify trends.",
-            "requirements": "Excellent communication skills. Familiarity with social media platforms and digital marketing tools.",
-            "duration": "3 months",
-            "startDate": "2024-06-15",
-            "image": "https://shorturl.at/U7NX8"
-        },
-        {
-            "id": "3",
-            "title": "Graphic Design Intern",
-            "company": "Design Studio Co.",
-            "location": "Remote",
-            "description": "Create visual content for various digital platforms. Work closely with the design team to develop creative concepts.",
-            "requirements": "Proficiency in Adobe Creative Suite. Strong portfolio showcasing design skills.",
-            "duration": "4 months",
-            "startDate": "2024-07-10",
-            "image": "https://shorturl.at/x6uNK"
-        },
-        {
-            "id": "4",
-            "title": "Data Analyst Intern",
-            "company": "Data Insights Corp.",
-            "location": "Austin, TX",
-            "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
-            "requirements": "Experience with SQL and data visualization tools. Strong analytical and quantitative skills.",
-            "duration": "5 months",
-            "startDate": "2024-08-01",
-            "image": "https://shorturl.at/mSeu9"
-        },
-        {
-            "id": "5",
-            "title": "HR Intern",
-            "company": "Global Enterprises",
-            "location": "Los Angeles, CA",
-            "description": "Support the HR team with recruitment and onboarding processes. Maintain employee records and assist with HR projects.",
-            "requirements": "Strong organizational skills. Knowledge of HR practices and procedures.",
-            "duration": "6 months",
-            "startDate": "2024-07-20",
-            "image": "https://static.vecteezy.com/system/resources/previews/031/695/460/non_2x/business-logo-template-globe-and-arrow-logo-is-suitable-for-global-company-world-technologies-media-and-publicity-agencies-vector.jpg"
-        }
-    ]
+  "internships": [
+    {
+      "id": "1",
+      "title": "Software Development Intern",
+      "company": "Tech Innovators Inc.",
+      "location": "San Francisco, CA",
+      "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
+      "requirements": "Knowledge of JavaScript, React.js, and Node.js. Strong problem-solving skills.",
+      "duration": "6 months",
+      "startDate": "2024-07-01",
+      "image": "https://media.istockphoto.com/id/1164494180/vector/flask-sign-lab-logo-template-vector-design-negative-space-bio-technology-symbol.jpg?s=612x612&w=0&k=20&c=NsnJH9TO3lGorXfBLo2NpqcdVZOgttXXvV3t6pCV2Js="
+    },
+    {
+      "id": "2",
+      "title": "Marketing Intern",
+      "company": "Creative Minds LLC",
+      "location": "New York, NY",
+      "description": "Support the marketing team in executing campaigns. Conduct market research and analyze data to identify trends.",
+      "requirements": "Excellent communication skills. Familiarity with social media platforms and digital marketing tools.",
+      "duration": "3 months",
+      "startDate": "2024-06-15",
+      "image": "https://shorturl.at/U7NX8"
+    },
+    {
+      "id": "3",
+      "title": "Graphic Design Intern",
+      "company": "Design Studio Co.",
+      "location": "Remote",
+      "description": "Create visual content for various digital platforms. Work closely with the design team to develop creative concepts.",
+      "requirements": "Proficiency in Adobe Creative Suite. Strong portfolio showcasing design skills.",
+      "duration": "4 months",
+      "startDate": "2024-07-10",
+      "image": "https://shorturl.at/x6uNK"
+    },
+    {
+      "id": "4",
+      "title": "Data Analyst Intern",
+      "company": "Data Insights Corp.",
+      "location": "Austin, TX",
+      "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
+      "requirements": "Experience with SQL and data visualization tools. Strong analytical and quantitative skills.",
+      "duration": "5 months",
+      "startDate": "2024-08-01",
+      "image": "https://shorturl.at/mSeu9"
+    },
+    {
+      "id": "5",
+      "title": "HR Intern",
+      "company": "Global Enterprises",
+      "location": "Los Angeles, CA",
+      "description": "Support the HR team with recruitment and onboarding processes. Maintain employee records and assist with HR projects.",
+      "requirements": "Strong organizational skills. Knowledge of HR practices and procedures.",
+      "duration": "6 months",
+      "startDate": "2024-07-20",
+      "image": "https://static.vecteezy.com/system/resources/previews/031/695/460/non_2x/business-logo-template-globe-and-arrow-logo-is-suitable-for-global-company-world-technologies-media-and-publicity-agencies-vector.jpg"
+    },
+    {
+      "id": "d513",
+      "title": "dsadd",
+      "company": "kjklj",
+      "location": "lkjlkj",
+      "description": "kljl",
+      "requirements": "kjkl",
+      "duration": "jklj",
+      "startDate": "kjkl",
+      "image": ""
+    },
+    {
+      "id": "c982",
+      "title": "React developer ",
+      "company": "PanAsia",
+      "location": "Colombo",
+      "description": "<p>Lorem50</P>",
+      "requirements": "sdadas",
+      "duration": "6months",
+      "startDate": "2024.07.08",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+    }
+  ]
 }

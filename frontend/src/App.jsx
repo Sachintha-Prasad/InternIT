@@ -11,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage"
 import HomePage from "./pages/HomePage"
 import InternPage from "./pages/InternPage"
 import InternsPage from "./pages/InternsPage"
+import PostInternPage from "./pages/PostInternPage"
 
 const App = () => {
     const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="*" element={<NotFoundPage />} />
                 <Route index element={<HomePage />} />
                 <Route path="/internships" element={<InternsPage />} />
+                <Route path="/add-internship" element={<PostInternPage />} />
                 <Route path="/internships/:id" element={<InternPage />} />
             </Route>
         )
