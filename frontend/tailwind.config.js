@@ -12,6 +12,11 @@ export default {
                 cream: "#FFFDEF"
             },
 
+            container: {
+                center: true,
+                padding: "2rem"
+            },
+
             screens: {
                 mobile: "425px",
                 tablet: "836px"
