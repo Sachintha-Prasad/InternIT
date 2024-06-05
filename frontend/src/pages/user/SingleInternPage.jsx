@@ -3,7 +3,22 @@ import { Link, Navigate, useNavigate, useParams } from "react-router-dom"
 import { toast } from "react-toastify"
 
 const SingleInternPage = () => {
-    const [intern, setIntern] = useState({})
+    const [intern, setIntern] = useState({
+        title: "",
+        company: "",
+        location: "",
+        description: "",
+        requirements: [],
+        skills: [],
+        duration: "",
+        startDate: "",
+        image: "",
+        postedTime: "",
+        type: "",
+        salary: "",
+        brief: ""
+    })
+
     const { id } = useParams()
     const navigate = useNavigate()
 
@@ -23,76 +38,86 @@ const SingleInternPage = () => {
         }
     }, [])
 
-    // delete a internship
-    const deleteIntern = async () => {
-        const res = await fetch(`http://localhost:5000/internships/${id}`, {
-            method: "DELETE"
-        })
-        return
-    }
-
-    const onlickDeleteIntern = (jobId) => {
-        const confirm = window.confirm(
-            "Are you sure to delete this intenship? 😥"
-        )
-
-        if (!confirm) return
-
-        deleteIntern(jobId)
-        toast.success("Successfully deleted the internship!")
-        navigate("/internships")
-    }
-
     return (
-        <div className="container py-24">
-            <div className="flex gap-12 flex-col items-start">
-                <div className="w-full max-w-[120px] h-[120px] flex items-center justify-center border-[1px] border-slate-300 p-1 rounded-full overflow-hidden">
-                    <img
-                        src={intern.image}
-                        alt=""
-                        className="w-full max-w-[100px] h-[100px] rounded-full object-cover"
-                    />
+        <div className="container py-12 md:py-20">
+            <div className="grid grid-cols-3 gap-6 gap-y-12 md:gap-12">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-12 w-full col-span-3">
+                    <aside className="flex flex-col gap-2 bg-indigo-50 px-4 py-6 rounded-lg">
+                        <img
+                            src={intern.image}
+                            alt=""
+                            className="w-full max-w-[60px] h-[60px] rounded-lg object-cover"
+                        />
+                        <p className="text-xl font-medium">{intern.company}</p>
+                        <p>{intern.location}</p>
+                    </aside>
+
+                    <div className="flex flex-col gap-3">
+                        <h1 className="text-2xl md:text-4xl font-medium">
+                            {intern.title}
+                        </h1>
+                        <p className="w-full max-w-[800px]">
+                            {intern.description}
+                        </p>
+                    </div>
                 </div>
-                <h2 className="text-2xl font-semibold">{intern.title}</h2>
-                <div className="flex flex-col gap-2">
-                    <p>
-                        <span className="font-semibold">Company :</span>{" "}
-                        {intern.company}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Location :</span>{" "}
-                        {intern.location}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Breif :</span>{" "}
-                        {intern.description}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Requirements :</span>{" "}
-                        {intern.requirements}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Duration :</span>{" "}
-                        {intern.duration}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Started date :</span>{" "}
-                        {intern.startDate}
-                    </p>
+
+                <hr className="col-span-3" />
+
+                <div className="col-span-3 sm:col-span-1">
+                    <div className="flex flex-col gap-6">
+                        <div className="flex items-center gap-1 flex-wrap">
+                            <h2 className="font-semibold">Job Type |</h2>
+                            <p>{intern.type}</p>
+                        </div>
+                        <div className="flex flex-col items-start gap-1">
+                            <h2 className="font-semibold">Requirements |</h2>
+                            <div className="flex gap-3 flex-wrap">
+                                {intern.requirements.map((item, index) => (
+                                    <p key={index} className="underline">
+                                        {item}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="flex flex-col items-start gap-1">
+                            <h2 className="font-semibold">Skills |</h2>
+                            <div className="flex gap-3 flex-wrap">
+                                {intern.skills.map((item, index) => (
+                                    <p key={index} className="underline">
+                                        {item}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-1 flex-wrap">
+                            <h2 className="font-semibold">Duration |</h2>
+                            <p>{intern.duration}</p>
+                        </div>
+                        <div className="flex items-center gap-1 flex-wrap">
+                            <h2 className="font-semibold">Start Date |</h2>
+                            <p>{intern.startDate}</p>
+                        </div>
+                        <div className="flex items-center gap-1 flex-wrap">
+                            <h2 className="font-semibold">Salary |</h2>
+                            <p>{intern.salary}</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="btn-container flex gap-3">
-                    <Link
-                        onClick={() => onlickDeleteIntern(intern.id)}
-                        className="cta-btn bg-red-600"
-                    >
-                        Delete
-                    </Link>
-                    <Link
-                        to={`/edit-intern/${intern.id}`}
-                        className="cta-btn bg-green-600"
-                    >
-                        Edit
-                    </Link>
+
+                <div className="col-span-3 sm:col-span-2 flex flex-col gap-3">
+                    <div className="flex flex-col gap-2">
+                        <h2 className="font-semibold text-lg">Brief</h2>
+                        <p>{intern.brief}</p>
+                    </div>
+                    <div className="mt-12">
+                        <Link
+                            to={`/edit-intern/${intern.id}`}
+                            className="cta-btn"
+                        >
+                            Apply now
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

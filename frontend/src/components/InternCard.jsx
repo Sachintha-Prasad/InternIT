@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { FaRegStar } from "react-icons/fa"
+import { BsClock, BsStar } from "react-icons/bs"
 
 const InternCard = ({ intern, isGrid }) => {
     return (
         <Link
             to={`/internships/${intern.id}`}
-            className="rounded-xl bg-white p-4 ring-[2px] ring-gray-100 sm:p-6 lg:p-8 hover:bg-indigo-50 hover:ring-indio-50 transition-all duration-200 ease-linear"
+            className="rounded-xl bg-white p-4 ring-[2px] ring-gray-100 sm:p-6 lg:p-8 hover:bg-indigo-50 hover:ring-0 transition-all duration-200 ease-linear"
         >
             <div
                 className={`${
@@ -39,20 +39,7 @@ const InternCard = ({ intern, isGrid }) => {
 
                     <div className="mt-4 sm:flex sm:items-center sm:gap-4">
                         <div className="flex items-center flex-wrap gap-1 text-gray-500">
-                            <svg
-                                className="h-4 w-4"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                ></path>
-                            </svg>
+                            <BsClock className="text-sm" />
 
                             <p className="text-xs font-medium">
                                 {intern.duration}
@@ -60,7 +47,7 @@ const InternCard = ({ intern, isGrid }) => {
                         </div>
 
                         <div className="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex items-center flex-wrap gap-2">
-                            <FaRegStar className="text-sm" />
+                            <BsStar className="text-sm" />
                             {intern.skills.map((item, index) => (
                                 <p
                                     key={index}

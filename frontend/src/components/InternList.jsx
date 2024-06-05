@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import InternCard from "./InternCard"
 import Spinner from "../components/Spinner"
 import { IoGridOutline, IoGrid } from "react-icons/io5"
+import { CiGrid2H, CiGrid41 } from "react-icons/ci"
 
 const InternList = () => {
     const [internList, setInternList] = useState([])
@@ -32,17 +33,14 @@ const InternList = () => {
     return (
         <div>
             <div className="container py-12 flex flex-col gap-6">
-                <div className="self-end">
+                <div
+                    className="self-end p-3 hover:bg-indigo-50 rounded-full cursor-pointer"
+                    onClick={handleListView}
+                >
                     {isGrid ? (
-                        <IoGrid
-                            className="text-indigo-500 text-2xl cursor-pointer"
-                            onClick={handleListView}
-                        />
+                        <CiGrid2H className="text-indigo-500 text-2xl " />
                     ) : (
-                        <IoGridOutline
-                            className="text-gray-500 text-2xl cursor-pointer"
-                            onClick={handleListView}
-                        />
+                        <CiGrid41 className="text-indigo-500 text-2xl " />
                     )}
                 </div>
 

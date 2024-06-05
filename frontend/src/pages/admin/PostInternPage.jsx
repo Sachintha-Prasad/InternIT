@@ -15,6 +15,7 @@ const PostInternPage = () => {
     const [postedTime, setPostedTime] = useState("")
     const [type, setType] = useState("")
     const [salary, setSalary] = useState("")
+    const [brief, setBrief] = useState("")
 
     const navigate = useNavigate()
 
@@ -30,7 +31,8 @@ const PostInternPage = () => {
         image,
         postedTime,
         type,
-        salary
+        salary,
+        brief
     }
 
     // post a internship
