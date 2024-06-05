@@ -1,49 +1,82 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const InternCard = ({ intern }) => {
+const InternCard = ({ intern, isGrid }) => {
     return (
-        <div className="p-6 bg-white shadow-lg w-full max-w-[600px] rounded-lg">
-            <div className="flex flex-col items-center gap-2">
-                <div className="w-full max-w-[50px] h-[50px] flex items-center justify-center border-[1px] border-slate-300 p-1 rounded-full overflow-hidden">
+        <article className="rounded-xl bg-white p-4 ring-[2px] ring-gray-100 sm:p-6 lg:p-8 hover:bg-indigo-50 hover:ring-indio-50 transition-all duration-200 ease-linear">
+            <div
+                className={`${
+                    isGrid ? "flex-col" : "flex-col md:flex-row"
+                } flex gap-4 items-start sm:gap-8`}
+            >
+                <div className="flex items-center justify-center w-full max-w-[80px] h-[80px] p-2 rounded-full border-2 border-gray-100 overflow-hidden">
                     <img
                         src={intern.image}
                         alt=""
-                        className="w-full max-w-[40px] h-[40px] rounded-full object-cover"
+                        className="rounded-full w-full max-w-[60px] h-[60px] object-fill"
                     />
                 </div>
-                <h2 className="text-xl font-medium">{intern.title}</h2>
-                <div className="flex flex-col gap-2 self-start">
-                    <p>
-                        <span className="font-semibold">Company :</span>{" "}
-                        {intern.company}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Location :</span>{" "}
-                        {intern.location}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Breif :</span>{" "}
+
+                <div>
+                    <strong className="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
+                        {intern.type}
+                    </strong>
+
+                    <Link
+                        to={`/internships/${intern.id}`}
+                        className="mt-4 text-lg font-medium sm:text-xl block hover:underline"
+                    >
+                        {" "}
+                        {intern.title}
+                        {" | "}
+                        <span className="text-gray-500">{intern.company}</span>
+                    </Link>
+
+                    <p className="mt-1 text-sm text-gray-700">
                         {intern.description}
                     </p>
-                    <p>
-                        <span className="font-semibold">Requirements :</span>{" "}
-                        {intern.requirements}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Duration :</span>{" "}
-                        {intern.duration}
-                    </p>
-                    <p>
-                        <span className="font-semibold">Started date :</span>{" "}
-                        {intern.startDate}
-                    </p>
+
+                    <div className="mt-4 sm:flex sm:items-center sm:gap-2">
+                        <div className="flex items-center gap-1 text-gray-500">
+                            <svg
+                                className="h-4 w-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+
+                            <p className="text-xs font-medium">
+                                {intern.duration}
+                            </p>
+                        </div>
+
+                        <span className="hidden sm:block" aria-hidden="true">
+                            &middot;
+                        </span>
+
+                        <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex gap-2">
+                            skills{" "}
+                            {intern.skills.map((item, index) => (
+                                <p
+                                    key={index}
+                                    className="underline hover:text-gray-700"
+                                >
+                                    {item}
+                                </p>
+                            ))}
+                        </p>
+                    </div>
                 </div>
-                <Link to={`/internships/${intern.id}`} className="cta-btn mt-4">
-                    Apply
-                </Link>
             </div>
-        </div>
+        </article>
     )
 }
 
