@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom"
 import { toast } from "react-toastify"
 
-const InternPage = () => {
+const SingleInternPage = () => {
     const [intern, setIntern] = useState({})
     const { id } = useParams()
     const navigate = useNavigate()
@@ -99,4 +99,4 @@ const InternPage = () => {
     )
 }
 
-export default InternPage
+export default SingleInternPage

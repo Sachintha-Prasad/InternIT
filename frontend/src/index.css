@@ -28,6 +28,6 @@ a {
 
 @layer components {
     .cta-btn {
-        @apply bg-indigo-600 px-6 py-2 text-lg text-center text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-gray-800;
+        @apply bg-indigo-600 px-6 py-2  text-center text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-gray-800;
     }
 }

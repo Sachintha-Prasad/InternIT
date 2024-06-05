@@ -1,9 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { FaRegStar } from "react-icons/fa"
 
 const InternCard = ({ intern, isGrid }) => {
     return (
-        <article className="rounded-xl bg-white p-4 ring-[2px] ring-gray-100 sm:p-6 lg:p-8 hover:bg-indigo-50 hover:ring-indio-50 transition-all duration-200 ease-linear">
+        <Link
+            to={`/internships/${intern.id}`}
+            className="rounded-xl bg-white p-4 ring-[2px] ring-gray-100 sm:p-6 lg:p-8 hover:bg-indigo-50 hover:ring-indio-50 transition-all duration-200 ease-linear"
+        >
             <div
                 className={`${
                     isGrid ? "flex-col" : "flex-col md:flex-row"
@@ -22,22 +26,19 @@ const InternCard = ({ intern, isGrid }) => {
                         {intern.type}
                     </strong>
 
-                    <Link
-                        to={`/internships/${intern.id}`}
-                        className="mt-4 text-lg font-medium sm:text-xl block hover:underline"
-                    >
+                    <h2 className="mt-4 text-lg font-medium sm:text-xl">
                         {" "}
                         {intern.title}
                         {" | "}
                         <span className="text-gray-500">{intern.company}</span>
-                    </Link>
+                    </h2>
 
                     <p className="mt-1 text-sm text-gray-700">
                         {intern.description}
                     </p>
 
-                    <div className="mt-4 sm:flex sm:items-center sm:gap-2">
-                        <div className="flex items-center gap-1 text-gray-500">
+                    <div className="mt-4 sm:flex sm:items-center sm:gap-4">
+                        <div className="flex items-center flex-wrap gap-1 text-gray-500">
                             <svg
                                 className="h-4 w-4"
                                 fill="none"
@@ -58,12 +59,8 @@ const InternCard = ({ intern, isGrid }) => {
                             </p>
                         </div>
 
-                        <span className="hidden sm:block" aria-hidden="true">
-                            &middot;
-                        </span>
-
-                        <p className="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex gap-2">
-                            skills{" "}
+                        <div className="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex items-center flex-wrap gap-2">
+                            <FaRegStar className="text-sm" />
                             {intern.skills.map((item, index) => (
                                 <p
                                     key={index}
@@ -72,11 +69,11 @@ const InternCard = ({ intern, isGrid }) => {
                                     {item}
                                 </p>
                             ))}
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </article>
+        </Link>
     )
 }
 

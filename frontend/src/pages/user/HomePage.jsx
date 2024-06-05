@@ -1,6 +1,6 @@
 import React from "react"
-import Hero from "../components/Hero"
-import InternList from "../components/InternList"
+import Hero from "../../components/Hero"
+import InternList from "../../components/InternList"
 
 const HomePage = () => {
     return <div></div>

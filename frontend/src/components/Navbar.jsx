@@ -13,8 +13,8 @@ const Navbar = () => {
 
     const navClass = ({ isActive }) =>
         isActive
-            ? "text-gray-800 text-lg w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-indigo-500"
-            : "text-gray-400 text-lg w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-500 hover:after:w-full after:transition-all duration-1000 ease-in-out"
+            ? "text-gray-800 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-indigo-500"
+            : "text-gray-400 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-500 hover:after:w-full after:transition-all duration-1000 ease-in-out"
 
     const [menuOpen, setMenuOpen] = useState(false)
     const handleMenuToggle = () => setMenuOpen((prevState) => !prevState)
