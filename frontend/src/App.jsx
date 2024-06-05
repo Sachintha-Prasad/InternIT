@@ -14,16 +14,29 @@ import InternsPage from "./pages/InternsPage"
 import PostInternPage from "./pages/PostInternPage"
 import UpdateInternPage from "./pages/UpdateInternPage"
 
+import AdminLayout from "./layouts/AdminLayout"
+
 const App = () => {
     const router = createBrowserRouter(
         createRoutesFromElements(
-            <Route path="/" element={<MainLayout />}>
-                <Route path="*" element={<NotFoundPage />} />
-                <Route index element={<HomePage />} />
-                <Route path="/internships" element={<InternsPage />} />
-                <Route path="/add-internship" element={<PostInternPage />} />
-                <Route path="/internships/:id" element={<InternPage />} />
-                <Route path="/edit-intern/:id" element={<UpdateInternPage />} />
+            // user path
+            <Route path="/">
+                <Route path="/" element={<MainLayout />}>
+                    <Route path="*" element={<NotFoundPage />} />
+                    <Route index element={<HomePage />} />
+                    <Route path="/internships" element={<InternsPage />} />
+                    <Route
+                        path="/add-internship"
+                        element={<PostInternPage />}
+                    />
+                    <Route path="/internships/:id" element={<InternPage />} />
+                    <Route
+                        path="/edit-intern/:id"
+                        element={<UpdateInternPage />}
+                    />
+                </Route>
+
+                <Route path="/admin" element={<AdminLayout />}></Route>
             </Route>
         )
     )

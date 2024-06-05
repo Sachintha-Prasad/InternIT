@@ -3,12 +3,7 @@ import Hero from "../components/Hero"
 import InternList from "../components/InternList"
 
 const HomePage = () => {
-    return (
-        <div>
-            <Hero />
-            <InternList isHome={true} />
-        </div>
-    )
+    return <div></div>
 }
 
 export default HomePage
