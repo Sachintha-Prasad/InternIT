@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react"
 import InternCard from "./InternCard"
 import Spinner from "../components/Spinner"
+import { IoGridOutline, IoGrid } from "react-icons/io5"
 
-const InternList = ({ isHome }) => {
+const InternList = () => {
     const [internList, setInternList] = useState([])
     const [loading, setLoading] = useState(true)
+
+    const [isGrid, setIsGrid] = useState(false)
+
+    const handleListView = () => {
+        setIsGrid((prevState) => !prevState)
+    }
 
     useEffect(() => {
         try {
@@ -22,23 +29,38 @@ const InternList = ({ isHome }) => {
         }
     }, [])
 
-    const newInternList = isHome ? internList.slice(0, 3) : internList
-
     return (
-        <div className="bg-blue-50">
+        <div>
             <div className="container py-12 flex flex-col gap-6">
-                <div className="flex justify-center">
-                    <h2 className="text-2xl lg:text-3xl text-dark-gray font-semibold">
-                        {isHome ? "Featured " : "Available "}
-                        <span className="text-dark-blue">Internships</span>
-                    </h2>
+                <div className="self-end">
+                    {isGrid ? (
+                        <IoGrid
+                            className="text-indigo-500 text-2xl cursor-pointer"
+                            onClick={handleListView}
+                        />
+                    ) : (
+                        <IoGridOutline
+                            className="text-gray-500 text-2xl cursor-pointer"
+                            onClick={handleListView}
+                        />
+                    )}
                 </div>
+
                 {loading ? (
                     <Spinner loading={loading} />
                 ) : (
-                    <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                        {newInternList.map((intern) => (
-                            <InternCard key={intern.id} intern={intern} />
+                    <div
+                        className={`${
+                            isGrid &&
+                            "grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+                        } grid grid-cols-1 gap-8`}
+                    >
+                        {internList.map((intern) => (
+                            <InternCard
+                                key={intern.id}
+                                intern={intern}
+                                isGrid={isGrid}
+                            />
                         ))}
                     </div>
                 )}
