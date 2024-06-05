@@ -3,9 +3,17 @@ import heroImg from "../assets/hero-img.svg"
 
 const Hero = () => {
     return (
-        <div className="container py-24 lg:min-h-[800px] flex items-center">
-            <div className="w-full max-w-[500px]">
-                <img src={heroImg} alt="" />
+        <div className="bg-gradient-to-r from-indigo-700 to-indigo-500">
+            <div className="container py-12">
+                <div className="flex flex-col gap-2">
+                    <h1 className="text-2xl md:text-4xl font-semibold text-center text-white">
+                        Empower Your Future with Top IT Internships
+                    </h1>
+                    <p className="text-lg md:text-xl text-slate-100 text-center">
+                        Connect with top companies and start your journey in
+                        technology.
+                    </p>
+                </div>
             </div>
         </div>
     )
