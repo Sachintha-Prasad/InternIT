@@ -7,10 +7,15 @@ const PostInternPage = () => {
     const [company, setCompany] = useState("")
     const [location, setLocation] = useState("")
     const [description, setDescription] = useState("")
-    const [requirements, setRequirements] = useState("")
+    const [skills, setSkills] = useState([])
+    const [requirements, setRequirements] = useState([])
     const [duration, setDuration] = useState("")
     const [startDate, setStartDate] = useState("")
     const [image, setImage] = useState("")
+    const [postedTime, setPostedTime] = useState("")
+    const [type, setType] = useState("")
+    const [salary, setSalary] = useState("")
+    const [brief, setBrief] = useState("")
 
     const navigate = useNavigate()
 
@@ -19,10 +24,15 @@ const PostInternPage = () => {
         company,
         location,
         description,
+        skills,
         requirements,
         duration,
         startDate,
-        image
+        image,
+        postedTime,
+        type,
+        salary,
+        brief
     }
 
     // post a internship
@@ -45,7 +55,7 @@ const PostInternPage = () => {
 
         postIntern(newIntern)
         toast.success("Successfully added the internship!")
-        navigate("/internships")
+        navigate("/admin")
     }
 
     return (

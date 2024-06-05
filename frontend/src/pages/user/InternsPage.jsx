@@ -1,5 +1,5 @@
 import React from "react"
-import InternList from "../components/InternList"
+import InternList from "../../components/InternList"
 
 const InternsPage = () => {
     return (

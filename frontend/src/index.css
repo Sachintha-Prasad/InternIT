@@ -14,19 +14,9 @@
 ::-webkit-scrollbar {
     width: 6px;
 }
-::-webkit-scrollbar-track {
-    background: #fefcfb;
-}
-::-webkit-scrollbar-thumb {
-    background: #c2f0ff;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #0077b6;
-}
-
 body {
     background-color: #fefcfb;
-    color: #343a40;
+    color: rgb(55 65 81);
 }
 
 li,
@@ -38,6 +28,6 @@ a {
 
 @layer components {
     .cta-btn {
-        @apply bg-dark-blue px-8 py-3 text-lg text-center text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-dark-gray;
+        @apply bg-indigo-600 px-6 py-2  text-center text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-gray-800;
     }
 }
