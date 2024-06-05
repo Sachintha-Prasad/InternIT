@@ -27,7 +27,6 @@ const InternCard = ({ intern, isGrid }) => {
                     </strong>
 
                     <h2 className="mt-4 text-lg font-medium sm:text-xl">
-                        {" "}
                         {intern.title}
                     </h2>
 
@@ -38,7 +37,6 @@ const InternCard = ({ intern, isGrid }) => {
                     <div className="mt-4 sm:flex sm:items-center sm:gap-4">
                         <div className="flex items-center flex-wrap gap-1 text-gray-500">
                             <BsClock className="text-sm" />
-
                             <p className="text-xs font-medium">
                                 {intern.duration}
                             </p>

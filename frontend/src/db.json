@@ -147,63 +147,43 @@
         },
         {
             "id": "8",
-            "title": "DevOps Intern",
-            "company": "DevSolutions Inc.",
-            "location": "Chicago, IL",
-            "description": "Assist the DevOps team in automating workflows. Help in managing CI/CD pipelines and monitoring systems.",
+            "title": "Blockchain Development Intern",
+            "company": "CryptoBuilders Inc.",
+            "location": "Miami, FL",
+            "description": "Contribute to blockchain projects by developing smart contracts and dApps. Collaborate with the blockchain team on innovative solutions.",
             "requirements": [
-                "Familiarity with CI/CD tools",
-                "Scripting languages",
-                "Automation skills"
+                "Experience with Solidity",
+                "Knowledge of blockchain technology",
+                "Problem-solving skills"
             ],
-            "skills": ["Workflow Automation", "System Monitoring"],
-            "duration": "4 months",
-            "startDate": "2024-07-20",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/79b7899a-32be-4577-8681-4bd5d4040817/logo-search-grid-1x?logoTemplateVersion=1&v=637654932420270000",
-            "postedTime": "10 hours ago",
-            "type": "Part-time",
-            "salary": "$27/hour",
-            "brief": "DevSolutions Inc. is looking for a DevOps Intern in Chicago, IL to assist the team in automating workflows and managing CI/CD pipelines and monitoring systems. This part-time role spans four months, starting on July 20, 2024, with a salary of $27 per hour. Candidates should be familiar with CI/CD tools, scripting languages, and possess strong automation skills."
+            "skills": ["Smart Contract Development", "dApp Development"],
+            "duration": "6 months",
+            "startDate": "2024-07-15",
+            "image": "https://dynamic.brandcrowd.com/asset/logo/5c26b6d6-e8fc-4427-995d-f8c4941b91e1/logo-search-grid-1x?logoTemplateVersion=1&v=638388978207570000",
+            "postedTime": "4 days ago",
+            "type": "Full-time",
+            "salary": "$32/hour",
+            "brief": "CryptoBuilders Inc. in Miami, FL, is looking for a Blockchain Development Intern to contribute to blockchain projects by developing smart contracts and dApps. This full-time, six-month internship starts on July 15, 2024, with a competitive salary of $32 per hour. Ideal candidates should have experience with Solidity, knowledge of blockchain technology, and strong problem-solving skills."
         },
         {
             "id": "9",
-            "title": "Mobile App Development Intern",
-            "company": "AppDev Co.",
-            "location": "San Francisco, CA",
-            "description": "Work on developing mobile applications. Collaborate with the app development team to enhance app features and performance.",
-            "requirements": [
-                "iOS/Android development",
-                "Knowledge of Swift/Kotlin",
-                "UI/UX design principles"
-            ],
-            "skills": ["Mobile App Development", "Feature Enhancement"],
-            "duration": "6 months",
-            "startDate": "2024-07-10",
-            "image": "https://i.pinimg.com/474x/af/1f/d5/af1fd599c88d3366039750723fd29bf9.jpg",
-            "postedTime": "24 hours ago",
-            "type": "Full-time",
-            "salary": "$29/hour",
-            "brief": "Join AppDev Co. in San Francisco, CA as a Mobile App Development Intern. This full-time position involves developing mobile applications and collaborating with the app development team to enhance app features and performance. The six-month internship starts on July 10, 2024, and offers a salary of $29 per hour. Ideal candidates should have experience in iOS/Android development, knowledge of Swift/Kotlin, and a strong understanding of UI/UX design principles."
-        },
-        {
-            "id": "10",
-            "title": "AI/ML Intern",
+            "title": "Machine Learning Intern",
             "company": "AI Innovations",
             "location": "Boston, MA",
-            "description": "Assist in developing and training machine learning models. Work with the AI team to implement innovative AI solutions.",
+            "description": "Support machine learning projects by developing and testing algorithms. Work with the AI team to improve models and data accuracy.",
             "requirements": [
                 "Python",
-                "Machine learning algorithms",
-                "Data preprocessing"
+                "Machine learning frameworks",
+                "Data analysis skills"
             ],
-            "skills": ["Model Development", "AI Implementation"],
-            "duration": "5 months",
-            "startDate": "2024-07-05",
-            "image": "https://media.istockphoto.com/id/1170242705/vector/gh-initial-logo-design-inspiration-clean-and-clever-logo.jpg?s=612x612&w=0&k=20&c=hCUM6ULqpSfEZH9AWVRcbV_Txvcj4qwrqeB-kS8DE2s=",
-            "postedTime": "30 hours ago",
+            "skills": ["Algorithm Development", "Model Improvement"],
+            "duration": "4 months",
+            "startDate": "2024-06-30",
+            "image": "https://dynamic.brandcrowd.com/asset/logo/4bda6bb3-8f53-4c26-843a-f54deceba6e7/logo-search-grid-1x?logoTemplateVersion=2&v=638341495737200000",
+            "postedTime": "10 hours ago",
             "type": "Full-time",
-            "salary": "$32/hour",
-            "brief": "AI Innovations is seeking an AI/ML Intern in Boston, MA. This full-time position involves developing and training machine learning models and implementing innovative AI solutions with the AI team. The internship lasts five months, starting on July 5, 2024, with a salary of $32 per hour. Candidates should be proficient in Python, familiar with machine learning algorithms, and have experience in data preprocessing."
+            "salary": "$35/hour",
+            "brief": "AI Innovations is seeking a Machine Learning Intern to support projects by developing and testing algorithms. This full-time position in Boston, MA, starts on June 30, 2024, and lasts for four months, with a salary of $35 per hour. Candidates should have knowledge of Python, machine learning frameworks, and data analysis skills."
         }
     ]
 }
