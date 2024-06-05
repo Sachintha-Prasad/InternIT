@@ -42,14 +42,16 @@ const SingleInternPage = () => {
         <div className="container py-12 md:py-20">
             <div className="grid grid-cols-3 gap-6 gap-y-12 md:gap-12">
                 <div className="flex flex-col md:flex-row gap-4 md:gap-12 w-full col-span-3">
-                    <aside className="flex flex-col gap-2 bg-indigo-50 px-4 py-6 rounded-lg">
+                    <aside className="flex flex-col gap-2 bg-gradient-to-r from-indigo-700 to-indigo-500 px-4 py-6 rounded-lg">
                         <img
                             src={intern.image}
                             alt=""
                             className="w-full max-w-[60px] h-[60px] rounded-lg object-cover"
                         />
-                        <p className="text-xl font-medium">{intern.company}</p>
-                        <p>{intern.location}</p>
+                        <p className="text-xl font-medium text-white">
+                            {intern.company}
+                        </p>
+                        <p className="text-slate-100">{intern.location}</p>
                     </aside>
 
                     <div className="flex flex-col gap-3">

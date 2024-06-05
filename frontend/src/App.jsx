@@ -27,10 +27,9 @@ const App = () => {
             <Route path="/">
                 {/* user path */}
                 <Route path="/" element={<MainLayout />}>
-                    <Route index element={<HomePage />} />
                     {/* not found route */}
                     <Route path="*" element={<NotFoundPage />} />
-                    <Route path="/internships" element={<InternsPage />} />
+                    <Route index element={<InternsPage />} />
                     <Route
                         path="/internships/:id"
                         element={<SingleInternPage />}

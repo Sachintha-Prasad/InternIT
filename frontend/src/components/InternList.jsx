@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import InternCard from "./InternCard"
 import Spinner from "../components/Spinner"
-import { IoGridOutline, IoGrid } from "react-icons/io5"
 import { CiGrid2H, CiGrid41 } from "react-icons/ci"
+import Pagination from "./Pagination"
 
 const InternList = () => {
     const [internList, setInternList] = useState([])
@@ -13,6 +13,17 @@ const InternList = () => {
     const handleListView = () => {
         setIsGrid((prevState) => !prevState)
     }
+
+    // pagination
+    const [currentPage, setCurrentPage] = useState(1)
+    const [cardsPerPage, setCardsPerPage] = useState(6)
+
+    const lastCardIndex = currentPage * cardsPerPage
+    const firstCardIndex = lastCardIndex - cardsPerPage
+
+    const newInternList = internList.slice(firstCardIndex, lastCardIndex)
+
+    // pagination
 
     useEffect(() => {
         try {
@@ -32,7 +43,7 @@ const InternList = () => {
 
     return (
         <div>
-            <div className="container py-12 flex flex-col gap-6">
+            <div className="container py-6 flex flex-col gap-6">
                 <div
                     className="self-end p-3 hover:bg-indigo-50 rounded-full cursor-pointer"
                     onClick={handleListView}
@@ -53,7 +64,7 @@ const InternList = () => {
                             "grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
                         } grid grid-cols-1 gap-8`}
                     >
-                        {internList.map((intern) => (
+                        {newInternList.map((intern) => (
                             <InternCard
                                 key={intern.id}
                                 intern={intern}
@@ -62,6 +73,13 @@ const InternList = () => {
                         ))}
                     </div>
                 )}
+
+                <Pagination
+                    totalCards={internList.length}
+                    cardsPerPage={cardsPerPage}
+                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
+                />
             </div>
         </div>
     )
