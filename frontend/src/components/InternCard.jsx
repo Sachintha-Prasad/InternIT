@@ -13,7 +13,7 @@ const InternCard = ({ intern }) => {
                     />
                 </div>
                 <h2 className="text-xl font-medium">{intern.title}</h2>
-                <div className="flex flex-col gap-2 self-start">
+                <div className="flex flex-col gap-2">
                     <p>
                         <span className="font-semibold">Company :</span>{" "}
                         {intern.company}
