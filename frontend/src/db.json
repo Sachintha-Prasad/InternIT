@@ -185,5 +185,16 @@
             "salary": "$35/hour",
             "brief": "AI Innovations is seeking a Machine Learning Intern to support projects by developing and testing algorithms. This full-time position in Boston, MA, starts on June 30, 2024, and lasts for four months, with a salary of $35 per hour. Candidates should have knowledge of Python, machine learning frameworks, and data analysis skills."
         }
+    ],
+
+    "users": [
+        {
+            "id": "1",
+            "name": "Sachintha Prasad",
+            "contactNumber": "0785315843",
+            "email": "prasadsachintha1231@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/sksprasad/",
+            "github": "https://github.com/Sachintha-Prasad"
+        }
     ]
 }
