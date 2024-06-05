@@ -1,59 +1,199 @@
 {
-  "internships": [
-    {
-      "id": "1",
-      "title": "Software Dev Intern",
-      "company": "Tech Innovators Inc.",
-      "location": "San Francisco, CA",
-      "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
-      "requirements": "Knowledge of JavaScript, React.js, and Node.js. Strong problem-solving skills.",
-      "duration": "6 months",
-      "startDate": "2024-07-01",
-      "image": "https://media.istockphoto.com/id/1164494180/vector/flask-sign-lab-logo-template-vector-design-negative-space-bio-technology-symbol.jpg?s=612x612&w=0&k=20&c=NsnJH9TO3lGorXfBLo2NpqcdVZOgttXXvV3t6pCV2Js="
-    },
-    {
-      "id": "2",
-      "title": "Marketing Intern",
-      "company": "Creative Minds LLC",
-      "location": "New York, NY",
-      "description": "Support the marketing team in executing campaigns. Conduct market research and analyze data to identify trends.",
-      "requirements": "Excellent communication skills. Familiarity with social media platforms and digital marketing tools.",
-      "duration": "3 months",
-      "startDate": "2024-06-15",
-      "image": "https://shorturl.at/U7NX8"
-    },
-    {
-      "id": "3",
-      "title": "Graphic Design Intern",
-      "company": "Design Studio Co.",
-      "location": "Remote",
-      "description": "Create visual content for various digital platforms. Work closely with the design team to develop creative concepts.",
-      "requirements": "Proficiency in Adobe Creative Suite. Strong portfolio showcasing design skills.",
-      "duration": "4 months",
-      "startDate": "2024-07-10",
-      "image": "https://shorturl.at/x6uNK"
-    },
-    {
-      "id": "4",
-      "title": "Data Analyst Intern",
-      "company": "Data Insights Corp.",
-      "location": "Austin, TX",
-      "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
-      "requirements": "Experience with SQL and data visualization tools. Strong analytical and quantitative skills.",
-      "duration": "5 months",
-      "startDate": "2024-08-01",
-      "image": "https://shorturl.at/mSeu9"
-    },
-    {
-      "id": "5",
-      "title": "HR Intern",
-      "company": "Global Enterprises",
-      "location": "Los Angeles, CA",
-      "description": "Support the HR team with recruitment and onboarding processes. Maintain employee records and assist with HR projects.",
-      "requirements": "Strong organizational skills. Knowledge of HR practices and procedures.",
-      "duration": "6 months",
-      "startDate": "2024-07-20",
-      "image": "https://static.vecteezy.com/system/resources/previews/031/695/460/non_2x/business-logo-template-globe-and-arrow-logo-is-suitable-for-global-company-world-technologies-media-and-publicity-agencies-vector.jpg"
-    }
-  ]
+    "internships": [
+        {
+            "id": "1",
+            "title": "Software Dev Intern",
+            "company": "Tech Innovators Inc.",
+            "location": "San Francisco, CA",
+            "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
+            "requirements": [
+                "JavaScript",
+                "React.js",
+                "Node.js",
+                "Strong problem-solving skills"
+            ],
+            "skills": ["Web Development", "Team Collaboration"],
+            "duration": "6 months",
+            "startDate": "2024-07-01",
+            "image": "https://media.istockphoto.com/id/1164494180/vector/flask-sign-lab-logo-template-vector-design-negative-space-bio-technology-symbol.jpg?s=612x612&w=0&k=20&c=NsnJH9TO3lGorXfBLo2NpqcdVZOgttXXvV3t6pCV2Js=",
+            "postedTime": "48 hours ago",
+            "type": "Full-time",
+            "salary": "$25/hour"
+        },
+        {
+            "id": "2",
+            "title": "Data Analyst Intern",
+            "company": "Data Insights Corp.",
+            "location": "Austin, TX",
+            "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
+            "requirements": [
+                "SQL",
+                "Data visualization tools",
+                "Strong analytical and quantitative skills"
+            ],
+            "skills": ["Data Analysis", "Report Generation"],
+            "duration": "5 months",
+            "startDate": "2024-08-01",
+            "image": "https://shorturl.at/mSeu9",
+            "postedTime": "5 days ago",
+            "type": "Part-time",
+            "salary": "$20/hour"
+        },
+        {
+            "id": "3",
+            "title": "Software Engineering Intern",
+            "company": "BuildIt Corp.",
+            "location": "Denver, CO",
+            "description": "Support engineering projects by conducting research and testing. Collaborate with the engineering team to improve product designs.",
+            "requirements": [
+                "CAD software",
+                "Engineering principles",
+                "Strong technical skills"
+            ],
+            "skills": ["Research", "Product Design"],
+            "duration": "5 months",
+            "startDate": "2024-06-20",
+            "image": "https://shorturl.at/hjwTX",
+            "postedTime": "12 hours ago",
+            "type": "Full-time",
+            "salary": "$30/hour"
+        },
+        {
+            "id": "4",
+            "title": "Web Development Intern",
+            "company": "Web Wonders LLC",
+            "location": "Remote",
+            "description": "Assist in creating and maintaining websites. Work with the development team to enhance user experience and site performance.",
+            "requirements": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive design principles"
+            ],
+            "skills": ["Web Development", "User Experience"],
+            "duration": "4 months",
+            "startDate": "2024-07-10",
+            "image": "https://shorturl.at/x6uNK",
+            "postedTime": "3 days ago",
+            "type": "Part-time",
+            "salary": "$22/hour"
+        },
+        {
+            "id": "5",
+            "title": "IT Support Intern",
+            "company": "Tech Support Solutions",
+            "location": "New York, NY",
+            "description": "Provide technical support to clients. Assist in troubleshooting and resolving IT issues.",
+            "requirements": [
+                "Basic networking knowledge",
+                "Customer service skills",
+                "Problem-solving skills"
+            ],
+            "skills": ["Technical Support", "Troubleshooting"],
+            "duration": "6 months",
+            "startDate": "2024-07-15",
+            "image": "https://shorturl.at/hqQRV",
+            "postedTime": "2 days ago",
+            "type": "Full-time",
+            "salary": "$18/hour"
+        },
+        {
+            "id": "6",
+            "title": "Cybersecurity Intern",
+            "company": "SecureNet Inc.",
+            "location": "Los Angeles, CA",
+            "description": "Assist in monitoring and improving security measures. Work with the cybersecurity team to prevent data breaches and cyber attacks.",
+            "requirements": [
+                "Understanding of security protocols",
+                "Familiarity with cybersecurity tools",
+                "Analytical skills"
+            ],
+            "skills": ["Security Monitoring", "Risk Assessment"],
+            "duration": "4 months",
+            "startDate": "2024-07-25",
+            "image": "https://shorturl.at/aCOYZ",
+            "postedTime": "6 hours ago",
+            "type": "Part-time",
+            "salary": "$28/hour"
+        },
+        {
+            "id": "7",
+            "title": "Cloud Computing Intern",
+            "company": "CloudTech Solutions",
+            "location": "Remote",
+            "description": "Work with the cloud team to manage cloud infrastructure. Assist in deploying and optimizing cloud services.",
+            "requirements": [
+                "Knowledge of AWS or Azure",
+                "Cloud deployment",
+                "Optimization techniques"
+            ],
+            "skills": [
+                "Cloud Infrastructure Management",
+                "Service Optimization"
+            ],
+            "duration": "5 months",
+            "startDate": "2024-08-01",
+            "image": "https://shorturl.at/cuxF9",
+            "postedTime": "18 hours ago",
+            "type": "Full-time",
+            "salary": "$26/hour"
+        },
+        {
+            "id": "8",
+            "title": "DevOps Intern",
+            "company": "DevSolutions Inc.",
+            "location": "Chicago, IL",
+            "description": "Assist the DevOps team in automating workflows. Help in managing CI/CD pipelines and monitoring systems.",
+            "requirements": [
+                "Familiarity with CI/CD tools",
+                "Scripting languages",
+                "Automation skills"
+            ],
+            "skills": ["Workflow Automation", "System Monitoring"],
+            "duration": "4 months",
+            "startDate": "2024-07-20",
+            "image": "https://shorturl.at/kQRW3",
+            "postedTime": "10 hours ago",
+            "type": "Part-time",
+            "salary": "$27/hour"
+        },
+        {
+            "id": "9",
+            "title": "Mobile App Development Intern",
+            "company": "AppDev Co.",
+            "location": "San Francisco, CA",
+            "description": "Work on developing mobile applications. Collaborate with the app development team to enhance app features and performance.",
+            "requirements": [
+                "iOS/Android development",
+                "Knowledge of Swift/Kotlin",
+                "UI/UX design principles"
+            ],
+            "skills": ["Mobile App Development", "Feature Enhancement"],
+            "duration": "6 months",
+            "startDate": "2024-07-10",
+            "image": "https://shorturl.at/nIJT8",
+            "postedTime": "24 hours ago",
+            "type": "Full-time",
+            "salary": "$29/hour"
+        },
+        {
+            "id": "10",
+            "title": "AI/ML Intern",
+            "company": "AI Innovations",
+            "location": "Boston, MA",
+            "description": "Assist in developing and training machine learning models. Work with the AI team to implement innovative AI solutions.",
+            "requirements": [
+                "Python",
+                "Machine learning algorithms",
+                "Data preprocessing"
+            ],
+            "skills": ["Model Development", "AI Implementation"],
+            "duration": "5 months",
+            "startDate": "2024-07-05",
+            "image": "https://shorturl.at/ckQX2",
+            "postedTime": "30 hours ago",
+            "type": "Full-time",
+            "salary": "$32/hour"
+        }
+    ]
 }
