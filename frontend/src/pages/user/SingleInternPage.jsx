@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
+import { IoIosArrowRoundBack } from "react-icons/io"
 import { toast } from "react-toastify"
 
 const SingleInternPage = () => {
@@ -39,14 +40,18 @@ const SingleInternPage = () => {
     }, [])
 
     return (
-        <div className="container py-12 md:py-20">
+        <div className="container py-8">
+            <IoIosArrowRoundBack
+                className="text-[48px] text-indigo-400 rounded-full hover:bg-indigo-50 mb-4 cursor-pointer"
+                onClick={() => navigate(-1)}
+            />
             <div className="grid grid-cols-3 gap-6 gap-y-12 md:gap-12">
                 <div className="flex flex-col md:flex-row gap-4 md:gap-12 w-full col-span-3">
                     <aside className="flex flex-col gap-2 bg-gradient-to-r from-indigo-700 to-indigo-500 px-4 py-6 rounded-lg">
                         <img
                             src={intern.image}
                             alt=""
-                            className="w-full max-w-[60px] h-[60px] rounded-lg object-cover"
+                            className="w-full max-w-[60px] h-[60px] rounded-lg object-cover ring-2 ring-white mb-2"
                         />
                         <p className="text-xl font-medium text-white">
                             {intern.company}
@@ -113,10 +118,7 @@ const SingleInternPage = () => {
                         <p>{intern.brief}</p>
                     </div>
                     <div className="mt-12">
-                        <Link
-                            to={`/edit-intern/${intern.id}`}
-                            className="cta-btn"
-                        >
+                        <Link to={`/apply-intern`} className="cta-btn">
                             Apply now
                         </Link>
                     </div>

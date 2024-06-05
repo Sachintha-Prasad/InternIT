@@ -1,200 +1,239 @@
 {
-    "internships": [
-        {
-            "id": "1",
-            "title": "Software Dev Intern",
-            "company": "Tech Innovators Inc.",
-            "location": "San Francisco, CA",
-            "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
-            "requirements": [
-                "JavaScript",
-                "React.js",
-                "Node.js",
-                "Strong problem-solving skills"
-            ],
-            "skills": ["Web Development", "Team Collaboration"],
-            "duration": "6 months",
-            "startDate": "2024-07-01",
-            "image": "https://cdn.dribbble.com/users/4902992/screenshots/17677895/media/351ecbc1b4aa58ac45d475b4593f19e5.jpg?resize=400x0",
-            "postedTime": "48 hours ago",
-            "type": "Full-time",
-            "salary": "$25/hour",
-            "brief": "Join Tech Innovators Inc. as a Software Development Intern where you will assist in developing cutting-edge web applications using the latest frameworks. You will collaborate with a talented team of developers to deliver top-notch software solutions. This full-time position requires a solid understanding of JavaScript, React.js, and Node.js. It's a six-month internship starting on July 1, 2024, offering a salary of $25 per hour."
-        },
-        {
-            "id": "2",
-            "title": "Data Analyst Intern",
-            "company": "Data Insights Corp.",
-            "location": "Austin, TX",
-            "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
-            "requirements": [
-                "SQL",
-                "Data visualization tools",
-                "Strong analytical and quantitative skills"
-            ],
-            "skills": ["Data Analysis", "Report Generation"],
-            "duration": "5 months",
-            "startDate": "2024-08-01",
-            "image": "https://static.vecteezy.com/system/resources/thumbnails/008/214/517/small_2x/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg",
-            "postedTime": "5 days ago",
-            "type": "Part-time",
-            "salary": "$20/hour",
-            "brief": "Become a Data Analyst Intern at Data Insights Corp. in Austin, TX. This part-time role involves analyzing large datasets to uncover valuable insights and assisting in building data models and generating comprehensive reports. The internship lasts for five months, starting on August 1, 2024, with a pay rate of $20 per hour. Ideal candidates should possess knowledge of SQL, data visualization tools, and strong analytical skills."
-        },
-        {
-            "id": "3",
-            "title": "Software Engineering Intern",
-            "company": "BuildIt Corp.",
-            "location": "Denver, CO",
-            "description": "Support engineering projects by conducting research and testing. Collaborate with the engineering team to improve product designs.",
-            "requirements": [
-                "CAD software",
-                "Engineering principles",
-                "Strong technical skills"
-            ],
-            "skills": ["Research", "Product Design"],
-            "duration": "5 months",
-            "startDate": "2024-06-20",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/8bc164f3-82e5-4fdd-b98b-25e39f6d6955/logo-search-grid-1x?logoTemplateVersion=1&v=638295043422330000",
-            "postedTime": "12 hours ago",
-            "type": "Full-time",
-            "salary": "$30/hour",
-            "brief": "BuildIt Corp. is looking for a Software Engineering Intern to support engineering projects through research and testing. Located in Denver, CO, this full-time position offers a five-month duration starting on June 20, 2024, with a competitive salary of $30 per hour. Candidates should be proficient in CAD software and have a solid understanding of engineering principles and strong technical skills."
-        },
-        {
-            "id": "4",
-            "title": "Web Development Intern",
-            "company": "Web Wonders LLC",
-            "location": "Remote",
-            "description": "Assist in creating and maintaining websites. Work with the development team to enhance user experience and site performance.",
-            "requirements": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Responsive design principles"
-            ],
-            "skills": ["Web Development", "User Experience"],
-            "duration": "4 months",
-            "startDate": "2024-07-10",
-            "image": "https://marketplace.canva.com/EAFZHXFe3p8/1/0/1600w/canva-black-and-grey-clean-modern-minimalist-creative-technology-logo-ta7BAs34G3c.jpg",
-            "postedTime": "3 days ago",
-            "type": "Part-time",
-            "salary": "$22/hour",
-            "brief": "Join Web Wonders LLC as a Web Development Intern and contribute to the creation and maintenance of websites. This remote, part-time position involves enhancing user experience and site performance. The internship spans four months, starting on July 10, 2024, with a salary of $22 per hour. Ideal candidates should have knowledge of HTML, CSS, JavaScript, and responsive design principles."
-        },
-        {
-            "id": "5",
-            "title": "IT Support Intern",
-            "company": "Tech Support Solutions",
-            "location": "New York, NY",
-            "description": "Provide technical support to clients. Assist in troubleshooting and resolving IT issues.",
-            "requirements": [
-                "Basic networking knowledge",
-                "Customer service skills",
-                "Problem-solving skills"
-            ],
-            "skills": ["Technical Support", "Troubleshooting"],
-            "duration": "6 months",
-            "startDate": "2024-07-15",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/0e98cbeb-204f-414c-968e-f6ca64c6cd14/logo-search-grid-1x?logoTemplateVersion=1&v=638388978208200000",
-            "postedTime": "2 days ago",
-            "type": "Full-time",
-            "salary": "$18/hour",
-            "brief": "Tech Support Solutions is seeking an IT Support Intern to provide technical support to clients and assist in troubleshooting and resolving IT issues. Located in New York, NY, this full-time role spans six months, starting on July 15, 2024, and offers a salary of $18 per hour. Candidates should have basic networking knowledge, strong customer service skills, and excellent problem-solving abilities."
-        },
-        {
-            "id": "6",
-            "title": "Cybersecurity Intern",
-            "company": "SecureNet Inc.",
-            "location": "Los Angeles, CA",
-            "description": "Assist in monitoring and improving security measures. Work with the cybersecurity team to prevent data breaches and cyber attacks.",
-            "requirements": [
-                "Understanding of security protocols",
-                "Familiarity with cybersecurity tools",
-                "Analytical skills"
-            ],
-            "skills": ["Security Monitoring", "Risk Assessment"],
-            "duration": "4 months",
-            "startDate": "2024-07-25",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/8b32fd3a-e2de-41af-a086-b6a6d1569be5/logo-search-grid-1x?logoTemplateVersion=1&v=638456848854070000",
-            "postedTime": "6 hours ago",
-            "type": "Part-time",
-            "salary": "$28/hour",
-            "brief": "SecureNet Inc. is offering a Cybersecurity Internship in Los Angeles, CA. This part-time position involves assisting in monitoring and improving security measures to prevent data breaches and cyber attacks. The internship lasts four months, starting on July 25, 2024, with a salary of $28 per hour. Ideal candidates should have an understanding of security protocols, familiarity with cybersecurity tools, and strong analytical skills."
-        },
-        {
-            "id": "7",
-            "title": "Cloud Computing Intern",
-            "company": "CloudTech Solutions",
-            "location": "Remote",
-            "description": "Work with the cloud team to manage cloud infrastructure. Assist in deploying and optimizing cloud services.",
-            "requirements": [
-                "Knowledge of AWS or Azure",
-                "Cloud deployment",
-                "Optimization techniques"
-            ],
-            "skills": [
-                "Cloud Infrastructure Management",
-                "Service Optimization"
-            ],
-            "duration": "5 months",
-            "startDate": "2024-08-01",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/d24ec03e-a464-4bce-837d-155cdfca5d42/logo-search-grid-1x?logoTemplateVersion=2&v=638309649451200000",
-            "postedTime": "18 hours ago",
-            "type": "Full-time",
-            "salary": "$26/hour",
-            "brief": "Join CloudTech Solutions as a Cloud Computing Intern to help manage cloud infrastructure and assist in deploying and optimizing cloud services. This remote, full-time internship lasts for five months, starting on August 1, 2024, and offers a salary of $26 per hour. Candidates should have knowledge of AWS or Azure, cloud deployment, and optimization techniques."
-        },
-        {
-            "id": "8",
-            "title": "Blockchain Development Intern",
-            "company": "CryptoBuilders Inc.",
-            "location": "Miami, FL",
-            "description": "Contribute to blockchain projects by developing smart contracts and dApps. Collaborate with the blockchain team on innovative solutions.",
-            "requirements": [
-                "Experience with Solidity",
-                "Knowledge of blockchain technology",
-                "Problem-solving skills"
-            ],
-            "skills": ["Smart Contract Development", "dApp Development"],
-            "duration": "6 months",
-            "startDate": "2024-07-15",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eezq60BunmCMXu0KrMNg5zeaS-T29Ge_xQ&s",
-            "postedTime": "4 days ago",
-            "type": "Full-time",
-            "salary": "$32/hour",
-            "brief": "CryptoBuilders Inc. in Miami, FL, is looking for a Blockchain Development Intern to contribute to blockchain projects by developing smart contracts and dApps. This full-time, six-month internship starts on July 15, 2024, with a competitive salary of $32 per hour. Ideal candidates should have experience with Solidity, knowledge of blockchain technology, and strong problem-solving skills."
-        },
-        {
-            "id": "9",
-            "title": "Machine Learning Intern",
-            "company": "AI Innovations",
-            "location": "Boston, MA",
-            "description": "Support machine learning projects by developing and testing algorithms. Work with the AI team to improve models and data accuracy.",
-            "requirements": [
-                "Python",
-                "Machine learning frameworks",
-                "Data analysis skills"
-            ],
-            "skills": ["Algorithm Development", "Model Improvement"],
-            "duration": "4 months",
-            "startDate": "2024-06-30",
-            "image": "https://img.freepik.com/free-vector/purple-abstract-geometrical-logo-3d_1043-55.jpg",
-            "postedTime": "10 hours ago",
-            "type": "Full-time",
-            "salary": "$35/hour",
-            "brief": "AI Innovations is seeking a Machine Learning Intern to support projects by developing and testing algorithms. This full-time position in Boston, MA, starts on June 30, 2024, and lasts for four months, with a salary of $35 per hour. Candidates should have knowledge of Python, machine learning frameworks, and data analysis skills."
-        }
-    ],
-
-    "users": [
-        {
-            "id": "1",
-            "name": "Sachintha Prasad",
-            "contactNumber": "0785315843",
-            "email": "prasadsachintha1231@gmail.com",
-            "linkedin": "https://www.linkedin.com/in/sksprasad/",
-            "github": "https://github.com/Sachintha-Prasad"
-        }
-    ]
+  "internships": [
+    {
+      "id": "1",
+      "title": "Software Dev Intern",
+      "company": "Tech Innovators Inc.",
+      "location": "San Francisco, CA",
+      "description": "Assist in developing web applications using modern frameworks. Collaborate with a team of developers to deliver high-quality software solutions.",
+      "requirements": [
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Strong problem-solving skills"
+      ],
+      "skills": [
+        "Web Development",
+        "Team Collaboration"
+      ],
+      "duration": "6 months",
+      "startDate": "2024-07-01",
+      "image": "https://cdn.dribbble.com/users/4902992/screenshots/17677895/media/351ecbc1b4aa58ac45d475b4593f19e5.jpg?resize=400x0",
+      "postedTime": "48 hours ago",
+      "type": "Full-time",
+      "salary": "$25/hour",
+      "brief": "Join Tech Innovators Inc. as a Software Development Intern where you will assist in developing cutting-edge web applications using the latest frameworks. You will collaborate with a talented team of developers to deliver top-notch software solutions. This full-time position requires a solid understanding of JavaScript, React.js, and Node.js. It's a six-month internship starting on July 1, 2024, offering a salary of $25 per hour."
+    },
+    {
+      "id": "2",
+      "title": "Data Analyst Intern",
+      "company": "Data Insights Corp.",
+      "location": "Austin, TX",
+      "description": "Analyze large datasets to uncover insights. Assist in building data models and generating reports.",
+      "requirements": [
+        "SQL",
+        "Data visualization tools",
+        "Strong analytical and quantitative skills"
+      ],
+      "skills": [
+        "Data Analysis",
+        "Report Generation"
+      ],
+      "duration": "5 months",
+      "startDate": "2024-08-01",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/008/214/517/small_2x/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg",
+      "postedTime": "5 days ago",
+      "type": "Part-time",
+      "salary": "$20/hour",
+      "brief": "Become a Data Analyst Intern at Data Insights Corp. in Austin, TX. This part-time role involves analyzing large datasets to uncover valuable insights and assisting in building data models and generating comprehensive reports. The internship lasts for five months, starting on August 1, 2024, with a pay rate of $20 per hour. Ideal candidates should possess knowledge of SQL, data visualization tools, and strong analytical skills."
+    },
+    {
+      "id": "3",
+      "title": "Software Engineering Intern",
+      "company": "BuildIt Corp.",
+      "location": "Denver, CO",
+      "description": "Support engineering projects by conducting research and testing. Collaborate with the engineering team to improve product designs.",
+      "requirements": [
+        "CAD software",
+        "Engineering principles",
+        "Strong technical skills"
+      ],
+      "skills": [
+        "Research",
+        "Product Design"
+      ],
+      "duration": "5 months",
+      "startDate": "2024-06-20",
+      "image": "https://dynamic.brandcrowd.com/asset/logo/8bc164f3-82e5-4fdd-b98b-25e39f6d6955/logo-search-grid-1x?logoTemplateVersion=1&v=638295043422330000",
+      "postedTime": "12 hours ago",
+      "type": "Full-time",
+      "salary": "$30/hour",
+      "brief": "BuildIt Corp. is looking for a Software Engineering Intern to support engineering projects through research and testing. Located in Denver, CO, this full-time position offers a five-month duration starting on June 20, 2024, with a competitive salary of $30 per hour. Candidates should be proficient in CAD software and have a solid understanding of engineering principles and strong technical skills."
+    },
+    {
+      "id": "4",
+      "title": "Web Development Intern",
+      "company": "Web Wonders LLC",
+      "location": "Remote",
+      "description": "Assist in creating and maintaining websites. Work with the development team to enhance user experience and site performance.",
+      "requirements": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive design principles"
+      ],
+      "skills": [
+        "Web Development",
+        "User Experience"
+      ],
+      "duration": "4 months",
+      "startDate": "2024-07-10",
+      "image": "https://marketplace.canva.com/EAFZHXFe3p8/1/0/1600w/canva-black-and-grey-clean-modern-minimalist-creative-technology-logo-ta7BAs34G3c.jpg",
+      "postedTime": "3 days ago",
+      "type": "Part-time",
+      "salary": "$22/hour",
+      "brief": "Join Web Wonders LLC as a Web Development Intern and contribute to the creation and maintenance of websites. This remote, part-time position involves enhancing user experience and site performance. The internship spans four months, starting on July 10, 2024, with a salary of $22 per hour. Ideal candidates should have knowledge of HTML, CSS, JavaScript, and responsive design principles."
+    },
+    {
+      "id": "5",
+      "title": "IT Support Intern",
+      "company": "Tech Support Solutions",
+      "location": "New York, NY",
+      "description": "Provide technical support to clients. Assist in troubleshooting and resolving IT issues.",
+      "requirements": [
+        "Basic networking knowledge",
+        "Customer service skills",
+        "Problem-solving skills"
+      ],
+      "skills": [
+        "Technical Support",
+        "Troubleshooting"
+      ],
+      "duration": "6 months",
+      "startDate": "2024-07-15",
+      "image": "https://dynamic.brandcrowd.com/asset/logo/0e98cbeb-204f-414c-968e-f6ca64c6cd14/logo-search-grid-1x?logoTemplateVersion=1&v=638388978208200000",
+      "postedTime": "2 days ago",
+      "type": "Full-time",
+      "salary": "$18/hour",
+      "brief": "Tech Support Solutions is seeking an IT Support Intern to provide technical support to clients and assist in troubleshooting and resolving IT issues. Located in New York, NY, this full-time role spans six months, starting on July 15, 2024, and offers a salary of $18 per hour. Candidates should have basic networking knowledge, strong customer service skills, and excellent problem-solving abilities."
+    },
+    {
+      "id": "6",
+      "title": "Cybersecurity Intern",
+      "company": "SecureNet Inc.",
+      "location": "Los Angeles, CA",
+      "description": "Assist in monitoring and improving security measures. Work with the cybersecurity team to prevent data breaches and cyber attacks.",
+      "requirements": [
+        "Understanding of security protocols",
+        "Familiarity with cybersecurity tools",
+        "Analytical skills"
+      ],
+      "skills": [
+        "Security Monitoring",
+        "Risk Assessment"
+      ],
+      "duration": "4 months",
+      "startDate": "2024-07-25",
+      "image": "https://dynamic.brandcrowd.com/asset/logo/8b32fd3a-e2de-41af-a086-b6a6d1569be5/logo-search-grid-1x?logoTemplateVersion=1&v=638456848854070000",
+      "postedTime": "6 hours ago",
+      "type": "Part-time",
+      "salary": "$28/hour",
+      "brief": "SecureNet Inc. is offering a Cybersecurity Internship in Los Angeles, CA. This part-time position involves assisting in monitoring and improving security measures to prevent data breaches and cyber attacks. The internship lasts four months, starting on July 25, 2024, with a salary of $28 per hour. Ideal candidates should have an understanding of security protocols, familiarity with cybersecurity tools, and strong analytical skills."
+    },
+    {
+      "id": "7",
+      "title": "Cloud Computing Intern",
+      "company": "CloudTech Solutions",
+      "location": "Remote",
+      "description": "Work with the cloud team to manage cloud infrastructure. Assist in deploying and optimizing cloud services.",
+      "requirements": [
+        "Knowledge of AWS or Azure",
+        "Cloud deployment",
+        "Optimization techniques"
+      ],
+      "skills": [
+        "Cloud Infrastructure Management",
+        "Service Optimization"
+      ],
+      "duration": "5 months",
+      "startDate": "2024-08-01",
+      "image": "https://dynamic.brandcrowd.com/asset/logo/d24ec03e-a464-4bce-837d-155cdfca5d42/logo-search-grid-1x?logoTemplateVersion=2&v=638309649451200000",
+      "postedTime": "18 hours ago",
+      "type": "Full-time",
+      "salary": "$26/hour",
+      "brief": "Join CloudTech Solutions as a Cloud Computing Intern to help manage cloud infrastructure and assist in deploying and optimizing cloud services. This remote, full-time internship lasts for five months, starting on August 1, 2024, and offers a salary of $26 per hour. Candidates should have knowledge of AWS or Azure, cloud deployment, and optimization techniques."
+    },
+    {
+      "id": "8",
+      "title": "Blockchain Development Intern",
+      "company": "CryptoBuilders Inc.",
+      "location": "Miami, FL",
+      "description": "Contribute to blockchain projects by developing smart contracts and dApps. Collaborate with the blockchain team on innovative solutions.",
+      "requirements": [
+        "Experience with Solidity",
+        "Knowledge of blockchain technology",
+        "Problem-solving skills"
+      ],
+      "skills": [
+        "Smart Contract Development",
+        "dApp Development"
+      ],
+      "duration": "6 months",
+      "startDate": "2024-07-15",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eezq60BunmCMXu0KrMNg5zeaS-T29Ge_xQ&s",
+      "postedTime": "4 days ago",
+      "type": "Full-time",
+      "salary": "$32/hour",
+      "brief": "CryptoBuilders Inc. in Miami, FL, is looking for a Blockchain Development Intern to contribute to blockchain projects by developing smart contracts and dApps. This full-time, six-month internship starts on July 15, 2024, with a competitive salary of $32 per hour. Ideal candidates should have experience with Solidity, knowledge of blockchain technology, and strong problem-solving skills."
+    },
+    {
+      "id": "9",
+      "title": "Machine Learning Intern",
+      "company": "AI Innovations",
+      "location": "Boston, MA",
+      "description": "Support machine learning projects by developing and testing algorithms. Work with the AI team to improve models and data accuracy.",
+      "requirements": [
+        "Python",
+        "Machine learning frameworks",
+        "Data analysis skills"
+      ],
+      "skills": [
+        "Algorithm Development",
+        "Model Improvement"
+      ],
+      "duration": "4 months",
+      "startDate": "2024-06-30",
+      "image": "https://img.freepik.com/free-vector/purple-abstract-geometrical-logo-3d_1043-55.jpg",
+      "postedTime": "10 hours ago",
+      "type": "Full-time",
+      "salary": "$35/hour",
+      "brief": "AI Innovations is seeking a Machine Learning Intern to support projects by developing and testing algorithms. This full-time position in Boston, MA, starts on June 30, 2024, and lasts for four months, with a salary of $35 per hour. Candidates should have knowledge of Python, machine learning frameworks, and data analysis skills."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Sachintha Prasad",
+      "contactNumber": "0785315843",
+      "email": "prasadsachintha1231@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/sksprasad/",
+      "github": "https://github.com/Sachintha-Prasad"
+    },
+    {
+      "id": "173d",
+      "name": "prasad",
+      "phone": "0112222556",
+      "email": "prasadsachin96930@gmail.com",
+      "linkedin": "add",
+      "github": "adssdd"
+    },
+    {
+      "id": "11cd",
+      "name": "dasdd",
+      "phone": "afs",
+      "email": "prasadsachin96930@gmail.com",
+      "linkedin": "add",
+      "github": "adssdd"
+    }
+  ]
 }

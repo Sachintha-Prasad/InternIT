@@ -20,6 +20,7 @@ import InternsPage from "./pages/user/InternsPage"
 import AdminHomePage from "./pages/admin/AdminHomePage"
 import PostInternPage from "./pages/admin/PostInternPage"
 import UpdateInternPage from "./pages/admin/UpdateInternPage"
+import ApplyInternPage from "./pages/user/ApplyInternPage"
 
 const App = () => {
     const router = createBrowserRouter(
@@ -34,6 +35,7 @@ const App = () => {
                         path="/internships/:id"
                         element={<SingleInternPage />}
                     />
+                    <Route path="/apply-intern" element={<ApplyInternPage />} />
                 </Route>
 
                 {/* admin path */}

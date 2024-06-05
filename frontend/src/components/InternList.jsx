@@ -8,7 +8,7 @@ const InternList = () => {
     const [internList, setInternList] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const [isGrid, setIsGrid] = useState(false)
+    const [isGrid, setIsGrid] = useState(true)
 
     const handleListView = () => {
         setIsGrid((prevState) => !prevState)
@@ -49,9 +49,9 @@ const InternList = () => {
                     onClick={handleListView}
                 >
                     {isGrid ? (
-                        <CiGrid2H className="text-indigo-500 text-2xl " />
+                        <CiGrid2H className="text-indigo-500 text-3xl " />
                     ) : (
-                        <CiGrid41 className="text-indigo-500 text-2xl " />
+                        <CiGrid41 className="text-indigo-500 text-3xl " />
                     )}
                 </div>
 
