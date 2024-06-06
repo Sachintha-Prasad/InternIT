@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.svg'
+// import logo from '../assets/logo.svg'
 import { NavLink, Link } from 'react-router-dom'
 import { HiOutlineBars3CenterLeft } from 'react-icons/hi2'
 import { IoClose } from 'react-icons/io5'
