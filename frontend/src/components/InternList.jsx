@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import InternCard from './InternCard'
 import Spinner from '../components/Spinner'
-import { CiGrid2H, CiGrid41, CiSearch } from 'react-icons/ci'
 import Pagination from './Pagination'
+import resultNotFoundImg from '../assets/result-not-found.svg'
+import { CiGrid2H, CiGrid41, CiSearch } from 'react-icons/ci'
 
 const InternList = () => {
     const [internList, setInternList] = useState([])
@@ -19,9 +20,11 @@ const InternList = () => {
             const res = await fetch('http://localhost:5000/internships')
             const data = await res.json()
             const filteredData = data.filter((intern) =>
-                intern.title?.toLowerCase().includes(searchQuery.toLowerCase())
+                intern.title
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase().trim())
             )
-            setFilteredInternList(filteredData)
+            setFilteredInternList(filteredData ? filteredData : [])
         } catch (error) {
             console.log('Data fetching error', error)
         } finally {
@@ -58,6 +61,8 @@ const InternList = () => {
 
     const lastCardIndex = currentPage * cardsPerPage
     const firstCardIndex = lastCardIndex - cardsPerPage
+
+    console.log(filteredInternList)
 
     const paginatedInternList = filteredInternList.slice(
         firstCardIndex,
@@ -109,15 +114,34 @@ const InternList = () => {
                         className={`${
                             isGrid &&
                             'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
-                        } grid grid-cols-1 gap-8`}
+                        } relative grid grid-cols-1 gap-8`}
                     >
-                        {paginatedInternList.map((intern) => (
-                            <InternCard
-                                key={intern.id}
-                                intern={intern}
-                                isGrid={isGrid}
-                            />
-                        ))}
+                        {paginatedInternList.length === 0 ? (
+                            <div className="absolute left-1/2 top-0 -translate-x-1/2">
+                                <div className="flex flex-col items-center">
+                                    <h1 className="text-center text-xl font-medium lg:text-2xl">
+                                        Sorry, no result found!
+                                    </h1>
+                                    <p className="mb-3 text-center text-sm font-medium text-gray-400 lg:text-base">
+                                        what you searched was unfortunately not
+                                        found or doesn't exist
+                                    </p>
+                                    <img
+                                        src={resultNotFoundImg}
+                                        alt=""
+                                        className="w-full max-w-[300px]"
+                                    />
+                                </div>
+                            </div>
+                        ) : (
+                            paginatedInternList.map((intern) => (
+                                <InternCard
+                                    key={intern.id}
+                                    intern={intern}
+                                    isGrid={isGrid}
+                                />
+                            ))
+                        )}
                     </div>
                 )}
 
