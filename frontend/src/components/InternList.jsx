@@ -4,6 +4,7 @@ import Spinner from '../components/Spinner'
 import Pagination from './Pagination'
 import resultNotFoundImg from '../assets/result-not-found.svg'
 import { CiGrid2H, CiGrid41, CiSearch } from 'react-icons/ci'
+import { IoIosArrowRoundBack } from 'react-icons/io'
 
 const InternList = () => {
     const [internList, setInternList] = useState([])
@@ -30,6 +31,12 @@ const InternList = () => {
         } finally {
             setLoading(false)
         }
+    }
+
+    // handle no search result
+    const clearSearch = () => {
+        setSearchQuery('')
+        setFilteredInternList(internList)
     }
 
     // get all the data
@@ -90,7 +97,7 @@ const InternList = () => {
                         </div>
                         <button
                             type="submit"
-                            className="group ms-2 flex size-[42px] items-center justify-center rounded-lg border bg-indigo-500 text-sm font-medium text-white hover:bg-indigo-50"
+                            className="group ms-2 flex size-[42px] items-center justify-center rounded-lg border bg-indigo-500 text-sm font-medium text-white hover:bg-indigo-50 disabled:bg-indigo-50 disabled:text-gray-800 disabled:opacity-50"
                         >
                             <CiSearch className="text-xl group-hover:text-gray-800" />
                         </button>
@@ -117,8 +124,13 @@ const InternList = () => {
                         } relative grid grid-cols-1 gap-8`}
                     >
                         {paginatedInternList.length === 0 ? (
+                            // if not showing results render this
                             <div className="absolute left-1/2 top-0 -translate-x-1/2">
                                 <div className="flex flex-col items-center">
+                                    <IoIosArrowRoundBack
+                                        className="mb-4 cursor-pointer rounded-full text-[48px] text-indigo-400 hover:bg-indigo-50"
+                                        onClick={clearSearch}
+                                    />
                                     <h1 className="text-center text-xl font-medium lg:text-2xl">
                                         Sorry, no result found!
                                     </h1>
@@ -134,6 +146,7 @@ const InternList = () => {
                                 </div>
                             </div>
                         ) : (
+                            // if showing results render this
                             paginatedInternList.map((intern) => (
                                 <InternCard
                                     key={intern.id}
