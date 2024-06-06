@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import logo from "../assets/logo.svg"
-import { NavLink, Link } from "react-router-dom"
-import { HiOutlineBars3CenterLeft } from "react-icons/hi2"
-import { IoClose } from "react-icons/io5"
+import React, { useState } from 'react'
+import logo from '../assets/logo.svg'
+import { NavLink, Link } from 'react-router-dom'
+import { HiOutlineBars3CenterLeft } from 'react-icons/hi2'
+import { IoClose } from 'react-icons/io5'
 
 const Navbar = () => {
     // const navItems = [
@@ -21,9 +21,9 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="container py-8 flex gap-3 items-center justify-between">
-                <Link to={"/"} className="logo-container w-full max-w-28">
-                    <p className="font-medium text-2xl md:text-3xl">
+            <div className="container flex items-center justify-between gap-3 py-8">
+                <Link to={'/'} className="logo-container w-full max-w-28">
+                    <p className="text-2xl font-medium md:text-3xl">
                         Intern<span className="text-indigo-500">IT</span>
                     </p>
                 </Link>

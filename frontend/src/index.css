@@ -5,29 +5,29 @@
 @tailwind utilities;
 
 :root {
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* scroll bar  */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 body {
-    background-color: #fefcfb;
-    color: rgb(55 65 81);
+  background-color: #fefcfb;
+  color: rgb(55 65 81);
 }
 
 li,
 a {
-    text-decoration: none;
-    list-style: none;
-    outline: none;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
 }
 
 @layer components {
-    .cta-btn {
-        @apply bg-indigo-600 px-6 py-2  text-center text-white rounded-[8px] transition-all duration-200 ease-in-out hover:bg-gray-800;
-    }
+  .cta-btn {
+    @apply rounded-[8px] bg-indigo-600 px-6 py-2 text-center text-white transition-all duration-200 ease-in-out hover:bg-gray-800;
+  }
 }

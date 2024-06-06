@@ -1,15 +1,17 @@
-import React from "react"
-import { Outlet } from "react-router-dom"
-import { ToastContainer } from "react-toastify"
-import "react-toastify/ReactToastify.css"
+import React from "react";
+import AdminNavbar from "../components/AdminNavbar";
+import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 
 const AdminLayout = () => {
-    return (
-        <>
-            <Outlet />
-            <ToastContainer />
-        </>
-    )
-}
+  return (
+    <>
+      <AdminNavbar />
+      <Outlet />
+      <ToastContainer />
+    </>
+  );
+};
 
-export default AdminLayout
+export default AdminLayout;
