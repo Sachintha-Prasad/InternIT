@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { CiSearch } from 'react-icons/ci'
 
-const Searchbar = ({ setInternList }) => {
+const Searchbar = ({ setInternList, setCurrentPage }) => {
     const [searchQuery, setSearchQuery] = useState('')
 
     useEffect(() => {
@@ -16,6 +16,7 @@ const Searchbar = ({ setInternList }) => {
                 )
                 console.log(filteredData)
                 setInternList(filteredData)
+                setCurrentPage(1)
             } catch (error) {
                 console.error('Data fetching error', error)
             }

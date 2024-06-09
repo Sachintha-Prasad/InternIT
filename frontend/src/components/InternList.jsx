@@ -12,7 +12,7 @@ const InternList = () => {
     const [loading, setLoading] = useState(true)
     const [isGrid, setIsGrid] = useState(true)
     const [currentPage, setCurrentPage] = useState(1)
-    const [cardsPerPage, setCardsPerPage] = useState(6)
+    const [cardsPerPage] = useState(6)
 
     useEffect(() => {
         const fetchInterns = async () => {
@@ -46,6 +46,7 @@ const InternList = () => {
                 <Searchbar
                     internList={internList}
                     setInternList={setInternList}
+                    setCurrentPage={setCurrentPage}
                 />
                 <div
                     className="cursor-pointer rounded-full p-3 hover:bg-indigo-50"

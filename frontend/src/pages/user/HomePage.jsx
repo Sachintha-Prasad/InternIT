@@ -1,6 +1,7 @@
 import React from 'react'
 import InternList from '../../components/InternList'
 import Hero from '../../components/Hero'
+import Pagination from '../../components/Pagination'
 
 const Homepage = () => {
     return (
