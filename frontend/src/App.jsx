@@ -1,25 +1,25 @@
-import React from "react"
+import React from 'react'
 import {
     Route,
     createBrowserRouter,
     createRoutesFromElements,
-    RouterProvider
-} from "react-router-dom"
+    RouterProvider,
+} from 'react-router-dom'
 
 // general pages
-import MainLayout from "./layouts/MainLayout"
-import AdminLayout from "./layouts/AdminLayout"
-import NotFoundPage from "./pages/NotFoundPage"
+import MainLayout from './layouts/MainLayout'
+import AdminLayout from './layouts/AdminLayout'
 
 // user pages
-import HomePage from "./pages/user/HomePage"
-import SingleInternPage from "./pages/user/SingleInternPage"
-import InternsPage from "./pages/user/InternsPage"
+import HomePage from './pages/user/HomePage'
+import SingleInternPage from './pages/user/SingleInternPage'
+import ApplyInternPage from './pages/user/ApplyInternPage'
+import NotFoundPage from './pages/user/NotFoundPage'
 
 // admin pasges
-import AdminHomePage from "./pages/admin/AdminHomePage"
-import PostInternPage from "./pages/admin/PostInternPage"
-import UpdateInternPage from "./pages/admin/UpdateInternPage"
+import AdminHomePage from './pages/admin/AdminHomePage'
+import PostInternPage from './pages/admin/PostInternPage'
+import UpdateInternPage from './pages/admin/UpdateInternPage'
 
 const App = () => {
     const router = createBrowserRouter(
@@ -27,14 +27,14 @@ const App = () => {
             <Route path="/">
                 {/* user path */}
                 <Route path="/" element={<MainLayout />}>
-                    <Route index element={<HomePage />} />
                     {/* not found route */}
                     <Route path="*" element={<NotFoundPage />} />
-                    <Route path="/internships" element={<InternsPage />} />
+                    <Route index element={<HomePage />} />
                     <Route
                         path="/internships/:id"
                         element={<SingleInternPage />}
                     />
+                    <Route path="/apply-intern" element={<ApplyInternPage />} />
                 </Route>
 
                 {/* admin path */}

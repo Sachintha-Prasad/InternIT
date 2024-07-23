@@ -159,7 +159,7 @@
             "skills": ["Smart Contract Development", "dApp Development"],
             "duration": "6 months",
             "startDate": "2024-07-15",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/5c26b6d6-e8fc-4427-995d-f8c4941b91e1/logo-search-grid-1x?logoTemplateVersion=1&v=638388978207570000",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-eezq60BunmCMXu0KrMNg5zeaS-T29Ge_xQ&s",
             "postedTime": "4 days ago",
             "type": "Full-time",
             "salary": "$32/hour",
@@ -179,11 +179,37 @@
             "skills": ["Algorithm Development", "Model Improvement"],
             "duration": "4 months",
             "startDate": "2024-06-30",
-            "image": "https://dynamic.brandcrowd.com/asset/logo/4bda6bb3-8f53-4c26-843a-f54deceba6e7/logo-search-grid-1x?logoTemplateVersion=2&v=638341495737200000",
+            "image": "https://img.freepik.com/free-vector/purple-abstract-geometrical-logo-3d_1043-55.jpg",
             "postedTime": "10 hours ago",
             "type": "Full-time",
             "salary": "$35/hour",
             "brief": "AI Innovations is seeking a Machine Learning Intern to support projects by developing and testing algorithms. This full-time position in Boston, MA, starts on June 30, 2024, and lasts for four months, with a salary of $35 per hour. Candidates should have knowledge of Python, machine learning frameworks, and data analysis skills."
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "Sachintha Prasad",
+            "contactNumber": "0785315843",
+            "email": "prasadsachintha1231@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/sksprasad/",
+            "github": "https://github.com/Sachintha-Prasad"
+        },
+        {
+            "id": "173d",
+            "name": "prasad",
+            "phone": "0112222556",
+            "email": "prasadsachin96930@gmail.com",
+            "linkedin": "add",
+            "github": "adssdd"
+        },
+        {
+            "id": "11cd",
+            "name": "dasdd",
+            "phone": "afs",
+            "email": "prasadsachin96930@gmail.com",
+            "linkedin": "add",
+            "github": "adssdd"
         }
     ]
 }

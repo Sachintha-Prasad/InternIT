@@ -1,33 +1,40 @@
-import React, { useState } from "react"
-import logo from "../assets/logo.svg"
-import { NavLink, Link } from "react-router-dom"
-import { HiOutlineBars3CenterLeft } from "react-icons/hi2"
-import { IoClose } from "react-icons/io5"
+import React, { useState } from 'react'
+// import logo from '../assets/logo.svg'
+import { NavLink, Link } from 'react-router-dom'
+import { HiOutlineBars3CenterLeft } from 'react-icons/hi2'
+import { IoClose } from 'react-icons/io5'
 
 const Navbar = () => {
-    const navItems = [
-        { name: "Home", path: "/" },
-        { name: "Internships", path: "/internships" },
-        { name: "About", path: "/about" }
-    ]
+    // const navItems = [
+    //     { name: "Home", path: "/" },
+    //     { name: "Internships", path: "/internships" },
+    //     { name: "About", path: "/about" }
+    // ]
 
-    const navClass = ({ isActive }) =>
-        isActive
-            ? "text-gray-800 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-indigo-500"
-            : "text-gray-400 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-500 hover:after:w-full after:transition-all duration-1000 ease-in-out"
+    // const navClass = ({ isActive }) =>
+    //     isActive
+    //         ? "text-gray-800 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-indigo-500"
+    //         : "text-gray-400 w-auto relative after:absolute after:block after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-indigo-500 hover:after:w-full after:transition-all duration-1000 ease-in-out"
 
-    const [menuOpen, setMenuOpen] = useState(false)
-    const handleMenuToggle = () => setMenuOpen((prevState) => !prevState)
+    // const [menuOpen, setMenuOpen] = useState(false)
+    // const handleMenuToggle = () => setMenuOpen((prevState) => !prevState)
 
     return (
-        <div className=" border-b-2 border-gray-100">
-            <div className="container py-8 flex gap-3 items-center justify-between">
-                <div className="logo-container w-full max-w-28">
-                    <p className="font-medium text-3xl">
+        <div>
+            <div className="container flex items-center justify-between gap-3 py-8">
+                <Link to={'/'} className="logo-container w-full max-w-28">
+                    <p className="text-2xl font-medium md:text-3xl">
                         Intern<span className="text-indigo-500">IT</span>
                     </p>
-                </div>
-                {/* large screens */}
+                </Link>
+
+                <Link to="/admin" className="cta-btn">
+                    Admin
+                </Link>
+
+                {/* for future implementation  */}
+
+                {/* large screens
                 <nav className="hidden md:flex gap-4 lg:gap-8 items-center">
                     {navItems.map((item, index) => (
                         <NavLink
@@ -38,13 +45,10 @@ const Navbar = () => {
                             {item.name}
                         </NavLink>
                     ))}
-                </nav>
-                <Link to="/admin" className="cta-btn hidden md:block">
-                    Admin
-                </Link>
+                </nav> */}
 
                 {/* small screens */}
-                <div className="md:hidden" onClick={handleMenuToggle}>
+                {/* <div className="md:hidden" onClick={handleMenuToggle}>
                     {menuOpen ? (
                         <div>
                             <IoClose className="text-white text-4xl relative z-50" />
@@ -70,7 +74,7 @@ const Navbar = () => {
                     ) : (
                         <HiOutlineBars3CenterLeft className="text-dark-gray text-3xl" />
                     )}
-                </div>
+                </div> */}
             </div>
         </div>
     )
