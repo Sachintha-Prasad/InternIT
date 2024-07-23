@@ -1,4 +1,4 @@
-package com.InternIT.backend;
+package com.internit.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

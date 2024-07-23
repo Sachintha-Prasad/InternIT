@@ -1,4 +1,4 @@
-package com.InternIT.backend;
+package com.internit.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
