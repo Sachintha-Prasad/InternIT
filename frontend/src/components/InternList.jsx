@@ -18,7 +18,12 @@ const InternList = () => {
         const fetchInterns = async () => {
             setLoading(true)
             try {
-                const res = await fetch('http://localhost:5000/internships')
+                const res = await fetch(
+                    'http://localhost:8000/api/v1/internships'
+                )
+                if (!res.ok) {
+                    throw new Error('Network response was not ok')
+                }
                 const data = await res.json()
                 setInternList(data)
             } catch (error) {
@@ -27,10 +32,7 @@ const InternList = () => {
                 setLoading(false)
             }
         }
-        return () => {
-            fetchInterns()
-            console.log('return success')
-        }
+        fetchInterns()
     }, [])
 
     const handleListView = () => setIsGrid((prevState) => !prevState)

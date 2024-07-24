@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/internships")
+@CrossOrigin
 public class InternshipController {
     @Autowired
     private InternshipService internshipService;
